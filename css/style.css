@@ -500,6 +500,12 @@ nav {
   content: '\0062';
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .sidebar {
   display: block;
   position: fixed;
@@ -509,10 +515,6 @@ nav {
   background-color: #000;
   height: 200vh;
   color: #777;
-}
-
-.sidebar_header {
-  display: block;
 }
 
 .sidebar_header div {
@@ -538,8 +540,7 @@ nav {
 }
 
 .sidebar_menuitems {
-  margin-top: 70px;
-  padding-bottom: 30px;
+  padding: 8px 0;
   border-bottom: 1px solid #777;
 }
 
@@ -573,7 +574,7 @@ nav {
 }
 
 .sidebar_photo {
-  padding-left: 26px;
+  padding-left: 20px;
 }
 
 .sidebar_photo .sidebar_photo-box {
