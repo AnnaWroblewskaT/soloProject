@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: $sidebar-font;
+}
+
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    background-color: #000;
+    height: 200vh;
+    color: white;
+}

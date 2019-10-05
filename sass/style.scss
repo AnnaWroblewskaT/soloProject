@@ -1,0 +1,110 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+@import "glyphter";
+
+//sidebar
+
+.sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background-color: #000;
+    height: 200vh;
+    color: $sidebar-font-color;
+
+}
+
+.sidebar_header {
+    display: block;
+}
+
+.sidebar_header div {
+    display: inline-block;
+    float: left;
+
+}
+
+
+
+.sidebar_menu {
+    line-height: 100%;
+    font-size: 26px;
+    font-family: $sidebar-font;
+    font-weight: 200; //nie działa, why???
+
+
+    i {
+        text-align: center;
+        padding: 14px 22px;
+
+        &:hover {
+            color: white;
+            background-color: #222;
+        }
+    }
+}
+
+.sidebar_menuitems {
+
+    margin-top: 70px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $sidebar-font-color;
+
+
+    .menu-items {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+}
+
+.menu-item {
+
+    padding: 10px;
+    border-left: 4px solid black;
+
+    &:hover {
+        color: white;
+        background-color: #222;
+        border-left: 4px solid orange;
+
+        a {
+            color: white;
+        }
+    }
+
+    a {
+        color: $sidebar-font-color;
+        text-decoration: none;
+
+        i {
+            padding: 12px;
+        }
+    }
+}
+
+.sidebar_photo {
+
+    padding-left: 26px;
+
+    .sidebar_photo-box {
+        display: flex;
+        justify-items: space-around;
+    }
+
+    h5 {
+        text-transform: uppercase;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    p {
+        margin-left: 12px;
+    }
+}
