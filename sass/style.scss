@@ -4,6 +4,11 @@
 @import "layout";
 @import "glyphter";
 
+
+body {
+    background-color: #f8f8f094;
+}
+
 //sidebar
 
 .clearfix::after {
@@ -111,5 +116,56 @@
 
     p {
         margin-left: 12px;
+    }
+}
+
+//topbar
+
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 200px;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    border-bottom: 1px solid $main-font-grey;
+    background-color: $main-background-color;
+    color: $main-font-grey;
+
+
+    .topbar_item {
+        padding: 16px 26px;
+        border-left: 1px solid $main-font-grey;
+    }
+
+    i {
+        padding: 0 6px;
+    }
+
+    .topbar_wallet {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .topbar_profile {
+        color: blue;
+        font-size: 14px;
+    }
+}
+
+.main_general-stats {
+    position: absolute;
+    left: 220px;
+    top: 70px;
+    right: 20px;
+    background-color: $main-background-color;
+    border: 1px solid $main-font-grey;
+    color: $main-font-grey;
+
+    h4 {
+        text-transform: uppercase;
+        padding-left: 26px;
     }
 }
