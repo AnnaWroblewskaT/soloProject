@@ -1,0 +1,13 @@
+@mixin button-orange() {
+    border-radius: 5%;
+    border: none;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

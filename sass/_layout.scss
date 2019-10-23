@@ -1,14 +1,17 @@
 * {
     box-sizing: border-box;
     font-family: $sidebar-font;
+
 }
 
 
-.main-container {
-    width: 100%;
+.main {
+    width: calc(100% - 240px);
     max-width: 1200px;
-    margin: 0 auto;
-    background-color: lightgrey;
+    margin: 70px 100px 20px 220px;
+    //background-color: white;
+    // margin-left: 220px;
+    // margin-top: 70px;
 }
 
 .row::before,

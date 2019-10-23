@@ -345,11 +345,10 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
-.main-container {
-  width: 100%;
+.main {
+  width: calc(100% - 240px);
   max-width: 1200px;
-  margin: 0 auto;
-  background-color: lightgrey;
+  margin: 70px 100px 20px 220px;
 }
 
 .row::before,
@@ -501,7 +500,7 @@ nav {
 }
 
 body {
-  background-color: #f8f8f094;
+  background-color: white;
 }
 
 .clearfix::after {
@@ -600,6 +599,7 @@ body {
 
 .topbar {
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   left: 200px;
@@ -607,14 +607,14 @@ body {
   justify-content: flex-end;
   list-style-type: none;
   margin: 0;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #ccc;
   background-color: whitesmoke;
-  color: #bbb;
+  color: #ccc;
 }
 
 .topbar .topbar_item {
   padding: 16px 26px;
-  border-left: 1px solid #bbb;
+  border-left: 1px solid #ccc;
 }
 
 .topbar i {
@@ -632,18 +632,187 @@ body {
 }
 
 .main_general-stats {
-  position: absolute;
-  left: 220px;
-  top: 70px;
-  right: 20px;
   background-color: whitesmoke;
-  border: 1px solid #bbb;
-  color: #bbb;
+  color: #ccc;
 }
 
 .main_general-stats h4 {
   text-transform: uppercase;
-  padding-left: 26px;
+  padding: 18px 0 18px 26px;
+  border-bottom: 1px solid #ccc;
+}
+
+.main_general-stats .main_dates-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.main_general-stats .main_dates-container-begin,
+.main_general-stats .main_dates-container-end,
+.main_general-stats .icon-calendar {
+  border: 1px solid #ccc;
+  border-collapse: separate;
+  padding: 10px 50px 8px 10px;
+  color: black;
+  background-color: #fff;
+}
+
+.main_general-stats .main_dates-container-begin {
+  border-right: none;
+}
+
+.main_general-stats .main_dates-container-end {
+  border-right: none;
+}
+
+.main_general-stats .icon-calendar {
+  border-left: none;
+  padding-right: 20px;
+  color: #ccc;
+}
+
+.main_general-stats .main_dates-refresh {
+  width: 44px;
+  margin-left: 14px;
+  border-radius: 5%;
+  border: none;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main_general-stats .main_dates-refresh:hover {
+  cursor: pointer;
+}
+
+.main_figures {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+  margin: 30px 0;
+}
+
+.figures_column {
+  width: 45%;
+}
+
+.figures_row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  line-height: 200%;
+  padding-top: 4px;
+}
+
+.figures_text {
+  font-weight: bold;
+}
+
+.figures_number {
+  color: black;
+}
+
+.earn_chart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+  padding: 0 10%;
+  align-items: center;
+}
+
+.earn_chart-title {
+  font-weight: 700;
+  padding: 26px 0;
+  align-self: flex-start;
+}
+
+.earn_chart-image {
+  width: 100%;
+  padding-bottom: 36px;
+}
+
+.links {
+  background-color: whitesmoke;
+  color: #ccc;
+}
+
+.links .links_header {
+  text-transform: uppercase;
+  padding: 18px 0 18px 26px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0;
+}
+
+.links .links_button-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding-bottom: 20px;
+}
+
+.links .links_button {
+  border-radius: 5%;
+  border: none;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+.links .links_button:hover {
+  cursor: pointer;
+}
+
+.links .links_row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  margin: 0 20%;
+}
+
+.links .links_row:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.links .links_row:hover [class*='links_icon-'] {
+  opacity: 1;
+}
+
+.links .links_name-column {
+  font-weight: 700;
+  width: 150px;
+  padding-left: 10px;
+}
+
+.links .links_http-column {
+  width: 250px;
+}
+
+.links .links_icons-column {
+  padding-right: 10px;
+}
+
+.links .icon-links {
+  color: orange;
+}
+
+.links [class*='links_icon-'] {
+  opacity: 0;
+  padding: 6px;
+}
+
+.links .links_links {
+  text-decoration: none;
+  color: #5d5db3;
 }
 
 /*# sourceMappingURL=style.css.map */
