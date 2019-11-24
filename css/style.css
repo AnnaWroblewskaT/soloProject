@@ -509,6 +509,23 @@ body {
   display: table;
 }
 
+.show-menu {
+  display: none;
+  border-radius: 5%;
+  border: 1px solid darkorange;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 auto;
+}
+
+.show-menu:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
 .sidebar {
   display: block;
   position: fixed;
@@ -677,7 +694,7 @@ body {
   width: 44px;
   margin-left: 14px;
   border-radius: 5%;
-  border: none;
+  border: 1px solid darkorange;
   background-color: darkorange;
   display: flex;
   justify-content: center;
@@ -686,6 +703,7 @@ body {
 }
 
 .main_general-stats .main_dates-refresh:hover {
+  background-color: orange;
   cursor: pointer;
 }
 
@@ -756,7 +774,7 @@ body {
 
 .links .links_button {
   border-radius: 5%;
-  border: none;
+  border: 1px solid darkorange;
   background-color: darkorange;
   display: flex;
   justify-content: center;
@@ -767,6 +785,7 @@ body {
 }
 
 .links .links_button:hover {
+  background-color: orange;
   cursor: pointer;
 }
 
@@ -813,6 +832,40 @@ body {
 .links .links_links {
   text-decoration: none;
   color: #5d5db3;
+}
+
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+  .main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  .main_figures {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .figures_column {
+    width: 100%;
+  }
+  .sidebar {
+    z-index: 1;
+    left: -200px;
+    top: 0;
+    bottom: 0;
+    transition: all 0s;
+  }
+  .show-menu {
+    display: flex;
+  }
+  .mobile-view {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

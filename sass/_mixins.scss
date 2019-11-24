@@ -1,6 +1,6 @@
-@mixin button-orange() {
+@mixin button-orange {
     border-radius: 5%;
-    border: none;
+    border: 1px solid darkorange;
     background-color: darkorange;
     display: flex;
     justify-content: center;
@@ -8,6 +8,8 @@
     color: white;
 
     &:hover {
+        background-color: orange;
         cursor: pointer;
     }
+
 }
