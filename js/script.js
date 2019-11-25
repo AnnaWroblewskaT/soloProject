@@ -1,6 +1,6 @@
 var showMenu = document.querySelector(".show-menu");
-var mobileView = document.querySelector(".mobile-view");
+var mobileView = document.querySelector(".menu-items");
 
 showMenu.addEventListener('click', function () {
-    showMenu.classList.toggle(".mobile-view");
+    mobileView.classList.toggle("mobile-view");
 });

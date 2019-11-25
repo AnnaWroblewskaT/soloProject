@@ -16,15 +16,16 @@ body {
     display: table;
 }
 
+.btn-container {
+    display: none;
+}
+
 .show-menu {
     display: none;
     @include button-orange;
-    margin: 0 auto;
+
 
 }
-
-
-
 
 .sidebar {
     display: block;
@@ -373,11 +374,35 @@ body {
         transition: all 0s;
     }
 
+    .btn-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 25px;
+    }
+
+    .main_general-stats .main_dates-container {
+        flex-wrap: wrap;
+    }
+
     .show-menu {
         display: flex;
+        justify-content: flex-end;
     }
 
     .mobile-view {
         display: block;
+        position: absolute;
+        background-color: #000;
+        left: 200px;
     }
+
+    .links .links_row {
+        width: 100%;
+        margin: 0;
+
+    }
+
+
+
+
 }
